@@ -20,8 +20,46 @@ identity = np.eye(3) # 단위행렬,항등행렬
 range_based_array = np.arange(0,10,2) # 0부터 8까지 2씩 증가
 linspace_array = np.linspace(0,100,5) # 0부터 100까지 5개의 구간으로 행렬 생성
 
-print(zeros)
-print(ones)
-print(identity)
-print(range_based_array)
-print(linspace_array)
+# print(zeros)
+# print(ones)
+# print(identity)
+# print(range_based_array)
+# print(linspace_array)
+
+# 3차원 배열을 생성
+array = np.array(
+    [
+        [
+            [3, 2, 1],
+            [4, 5, 6]
+        ],
+        [
+            [9, 2, 31],
+            [4, 15, -6]
+        ]
+    ]
+)
+# print(array[1, 0, 2]) # 31 출력
+# print(array.shape) # 배열의 형태를 알려줌
+# print(array.ndim) # 배열의 차원을 알려줌
+# print(array.size) # 배열의 크기
+# print(array.dtype) # 원소의 타입 확인
+
+
+array = np.arange(1, 6)
+# print(array)
+# print(array[0]) # 처음 값 인덱싱
+# print(array[4], array[-1]) # 맨 끝 인덱싱
+# print(array[1:4], array[1:-1])
+# print(array[::2]) # 전체를 출력하되 2칸씩 띄운후에 출력
+
+arr2d = np.array(
+    [
+        [1, 2, 3],
+        [4, 5, 6]
+    ]
+)
+print(arr2d[0, 1]) # 앞에는 행, 뒤에는 열 출력. 따라서 0행1열이므로 2 출력
+print(arr2d[:,1]) # 전체 행, 1열이므로 2와 5 출력
+
+
