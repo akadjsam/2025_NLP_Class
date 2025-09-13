@@ -59,7 +59,18 @@ arr2d = np.array(
         [4, 5, 6]
     ]
 )
-print(arr2d[0, 1]) # 앞에는 행, 뒤에는 열 출력. 따라서 0행1열이므로 2 출력
-print(arr2d[:,1]) # 전체 행, 1열이므로 2와 5 출력
+# print(arr2d[0, 1]) # 앞에는 행, 뒤에는 열 출력. 따라서 0행1열이므로 2 출력
+# print(arr2d[:,1]) # 전체 행, 1열이므로 2와 5 출력
 
+np.random.seed(50) # 시드값을 줘서 출력이 항상 같음
+x = np.random.random(5) # 0~1 사이의 실수값을 뽑음
+print(x)
+y = np.random.randint(1, 7, 5) # 1에서 6 사이의 정수 5개 출력 (7은 미포함)
+print(y)
+z = np.random.normal(50, 10, 5) # 평균, 표준편차, 표본갯수 -> 정규분포 만들기
+print(z)
 
+# q = np.arange(1,6) #1~5 사이, 6은 미포함
+q = np.array(["가위","바위","보"])
+choice = np.random.choice(q, 2)
+print(choice)
